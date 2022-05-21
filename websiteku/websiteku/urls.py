@@ -25,7 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('about/', include('about.urls')),
-    path('buku/', include('buku.urls'))
+    path('buku/', include('buku.urls')),
+    path('tamu/', include('tamu.urls'))
 
 ] + static(settings.STATIC_URL,
 document_root=settings.STATIC_ROOT)
